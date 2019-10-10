@@ -1,5 +1,5 @@
 var DATA_PATH = 'data.json?v=0.3';
-var DEFAULT_SEARCH_TERM = 'Mã NV (7 ký tự)';
+var DEFAULT_SEARCH_TERM = 'Nhập mã nhân viên tại đây';
 
 var getLangConfig = function () {
   return {
