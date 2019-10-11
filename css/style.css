@@ -1,0 +1,161 @@
+@charset "utf-8";
+/* font */
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato-Regular.eot');
+  src: url('../fonts/Lato-Regular.eot?#iefix&v=4.5.0') format('embedded-opentype'), 
+  url('../fonts/Lato-Regular.woff2') format('woff2'), 
+  url('../fonts/Lato-Regular.woff') format('woff'), 
+  url('../fonts/Lato-Regular.ttf') format('truetype'), 
+  url('../fonts/Lato-Regular.svg#Latoregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lato-Black';
+  src: url('../fonts/Lato-Black.eot');
+  src: url('../fonts/Lato-Black.eot?#iefix&v=4.5.0') format('embedded-opentype'), 
+  url('../fonts/Lato-Black.woff2') format('woff2'), 
+  url('../fonts/Lato-Black.woff') format('woff'), 
+  url('../fonts/Lato-Black.ttf') format('truetype'), 
+  url('../fonts/Lato-Black.svg#Lato-Black') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lato-Light';
+  src: url('../fonts/Lato-Light.eot');
+  src: url('../fonts/Lato-Light.eot?#iefix&v=4.5.0') format('embedded-opentype'), 
+  url('../fonts/Lato-Light.woff2') format('woff2'), 
+  url('../fonts/Lato-Light.woff') format('woff'), 
+  url('../fonts/Lato-Light.ttf') format('truetype'), 
+  url('../fonts/Lato-Light.svg#Lato-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* CSS Document */
+html{ font-size:16px}
+.body-page{ float:left; position:relative; overflow:hidden; width:100%; }
+a {color:#000 ;	text-decoration: none; -moz-transition:0.2s ease-in-out; -webkit-transition:0.2s ease-in-out;	-ms-transition:0.2s ease-in-out; transition:0.2s ease-in-out;}
+a:hover {	color: #c4261d; text-decoration:none}
+p{ text-align:justify}
+.inner,.container-page { margin: 0 auto; width:100%; padding: 0 5%; float:left; position:relative}
+.relative {	position: relative;}
+.right {	float: right;}
+.left {	float: left;}
+
+.flex{display: flex;vertical-align: middle;align-items: center;}
+.flex-center{display: flex;vertical-align: middle;align-items: center; justify-content: center;}
+.flex-right{display: flex;vertical-align: middle;align-items: center; justify-content:right;}
+.flex-table{display: flex; flex-direction: column}
+ img{ max-width:100%}img.img-responsive{ display:unset} 
+
+/* HEADER */
+
+.logo {	display: inline-block;	font-size: 0;	padding-top:15px;}
+
+/* HEADER > MENU */
+.main-menu > li {display: inline-block; margin-left: 30px; padding: 20px 0;  position: relative;}
+.main-menu > li > a {	color: #000; font-size:1.2rem; font-family:'Lato'; text-transform:uppercase; text-decoration:none;}
+.main-menu > li.active > a{color:#006432}
+.main-menu > li:hover > a,.main-menu > li.current-menu-item > a {	color: #c4261d;}
+.main-menu > li.active > a:before,.main-menu > li:hover > a:before{ position:absolute; z-index:1; content:''; width:100%; height:3px; background:red; top:0px; left:0}
+
+/* banner */
+/*fixtop*/
+.fixtop {position: fixed !important; top: 0; width: 100%; background: rgba(30,100,70,.95);    z-index: 99; color:white}
+.fixtop .main-menu > li > a{color:white}
+
+
+.bg-dv{ float: left; width: 100%; background: url("../images/bg_promotion.jpg") no-repeat #1b7448; background-size: 100%; padding: 5% 5% 2% 5%;}
+.title-tracuu{
+    float: left; width: 100%;
+    background: #a9a6b9;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+}
+.week{
+    float: left; width: 100%;
+    margin: 8px 10px;
+    font: 1rem 'Lato-Black';
+    color: #fff;
+}
+.week span{background: #f00; padding:6px 0px; border-radius: 5px; color: #fff; font: 0.8rem 'Lato'; text-transform: uppercase;}
+.copyright {
+    border-top: 1px solid rgba(255,255,255,.5);
+    padding: 15px 0;
+    font-size: 0.8rem;
+    color: white;
+    margin-top: 50px;
+}
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+    .navbar .navbar-brand{ margin-right: 0; width: 60%;}
+    .main-menu > li {
+    display: inline-block;
+    margin-left: 0;
+    padding: 15px 0 0;
+    position: relative;
+    }
+    .main-menu > li {
+    color: #ffffff !important;
+    background: #006432;
+    border-bottom: 1px solid #f00;
+    padding: 10px;
+    
+    }
+    .main-menu > li > a { color: #fff !important; font-size: 0.8rem;}
+    .week{font: 0.8rem 'Lato-Black'; margin: 8px 0px;}
+    .week span{padding:5px 8px; border-radius: 5px; color: #fff; font: 0.6rem 'Lato'; text-transform: uppercase;}
+    .mobile-tracuu{margin-bottom: 20px;}
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {  }
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .main-menu > li {
+    display: inline-block;
+    margin-left: 0;
+    padding: 15px 0 0;
+    position: relative;
+}
+    .main-menu > li {
+    color: #ffffff !important;
+    background: #006432;
+    border-bottom: 1px solid #f00;
+    padding: 10px;
+    
+}
+    .main-menu > li > a {
+    color: #fff !important;
+    font-size: 0.8rem;
+}
+    .img-fluid{width: 100%}
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .main-menu > li {
+    display: inline-block;
+    margin-left: 15px;
+    padding: 15px 0;
+    position: relative;
+}
+    .main-menu > li > a {
+    color: #000;
+    font-size: 1rem;
+    font-family: 'Lato';
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 !important;
+}
+    .img-fluid{width: 100%}
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {  }
