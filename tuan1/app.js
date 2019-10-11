@@ -13,8 +13,8 @@ var getLangConfig = function () {
       next: 'Sau',
       previous: 'Trước'
     },
-    info: '<b>_TOTAL_</b> nhân viên.',
-    infoFiltered: 'Trên tổng số <b>_MAX_</b> nhân viên.',
+    info: '',
+    infoFiltered: '',
     infoEmpty: '',
   }
 }
