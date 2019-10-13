@@ -74,7 +74,7 @@ var setupTable = function (table_element, columns, data) {
       }
 
       if (value.length >= 4) {
-        table.search(value).draw();
+        table.rows().search('\\b' + value + '\\b', true, false).draw();
       } else {
         table.search(DEFAULT_SEARCH_TERM).draw();
       }
